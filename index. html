@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>سويت</title>
+    <title>Sweet</title>
 </head>
 <body bgcolor="pink">
 
-    <h1>موقعي البسيط</h1>
-    <p>أهلاً بكم في صفحتي الشخصية</p>
+    <
+    <p>Welcome to sweet</p>
 
     <!-- الروابط -->
     <a href="https://www.google.com">رابط 1</a>
@@ -20,13 +20,13 @@
     <hr>
 
     <!-- الصور -->
-    <img src="image1.jpg" width="200" height="150">
+    <img src= cake1.jpg" width="200" height="150">
     <br>
-    <img src="image2.jpg" width="200" height="150">
+    <img src="cake2.jpg" width="200" height="150">
     <br>
-    <img src="image3.jpg" width="200" height="150">
+    <img src="cake3.jpg" width="200" height="150">
     <br>
-    <img src="image4.jpg" width="200" height="150">
+    <img src="cake4.jpg" width="200" height="150">
 
 </body>
 </html>
