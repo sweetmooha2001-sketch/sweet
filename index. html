@@ -1,191 +1,32 @@
- <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sweet | متجر حلويات فاخرة</title>
-    <style>
-        /* تنسيقات أساسية للمتجر */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #fcf8f5;
-            color: #4a3728;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #ffffff;
-            text-align: center;
-            padding: 30px 10px;
-            border-bottom: 2px solid #f3e1d3;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            color: #d4a373;
-        }
-        header p {
-            margin: 5px 0 0;
-            font-size: 1.1rem;
-            color: #8c7867;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        /* شبكة عرض الصور والمنتجات */
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
-        .product-card {
-            background-color: #ffffff;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease;
-            border: 1px solid #f1eae4;
-            display: flex;
-            flex-direction: column;
-        }
-        .product-card:hover {
-            transform: translateY(-5px);
-        }
-        .product-image {
-            width: 100%;
-            height: 250px;
-            object-fit: cover; /* يضمن عدم تشوه أبعاد الصورة */
-            background-color: #f9f6f0;
-        }
-        .product-info {
-            padding: 20px;
-            text-align: center;
-            flex-grow: 1;
-        }
-        .product-info h3 {
-            margin: 0 0 10px;
-            font-size: 1.3rem;
-            color: #4a3728;
-        }
-        .product-price {
-            font-weight: bold;
-            color: #d4a373;
-            font-size: 1.2rem;
-            margin-bottom: 15px;
-        }
-        .order-btn {
-            background-color: #d4a373;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 25px;
-            cursor: pointer;
-            font-size: 1srem;
-            font-weight: bold;
-            transition: background-color 0.3s;
-            width: 100%;
-        }
-        .order-btn:hover {
-            background-color: #bfa280;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #4a3728;
-            color: #fcf8f5;
-            margin-top: 60px;
-        }
-    </style>
+    <title>سويت</title>
 </head>
-<body>
+<body bgcolor="pink">
 
-    <header>
-        <h1>sweet</h1>
-        <p>متجر حلويات فاخرة</p>
-    </header>
+    <h1>موقعي البسيط</h1>
+    <p>أهلاً بكم في صفحتي الشخصية</p>
 
-    <div class="container">
-        <div class="products-grid">
+    <!-- الروابط -->
+    <a href="https://www.google.com">رابط 1</a>
+    <br>
+    <a href="https://www.youtube.com">رابط 2</a>
+    <br>
+    <a href="https://www.facebook.com">رابط 3</a>
+    <br>
+    <a href="https://www.instagram.com">رابط 4</a>
 
-            <!-- المنتج 1 -->
-            <div class="product-card">
-                <img src="cake1.jpg" alt="حلوى فاخرة 1" class="product-image">
-                <div class="product-info">
-                    <h3>صنف حلوى فاخر 1</h3>
-                    <div class="product-price">السعر حسب الطلب</div>
-                    <button class="order-btn">اطلب الآن</button>
-                </div>
-            </div>
+    <hr>
 
-            <!-- المنتج 2 -->
-            <div class="product-card">
-                <img src="cake2.jpg" alt="حلوى فاخرة 2" class="product-image">
-                <div class="product-info">
-                    <h3>صنف حلوى فاخر 2</h3>
-                    <div class="product-price">السعر حسب الطلب</div>
-                    <button class="order-btn">اطلب الآن</button>
-                </div>
-            </div>
-
-            <!-- المنتج 3 -->
-            <div class="product-card">
-                <img src="cake3.jpg" alt="حلوى فاخرة 3" class="product-image">
-                <div class="product-info">
-                    <h3>صنف حلوى فاخر 3</h3>
-                    <div class="product-price">السعر حسب الطلب</div>
-                    <button class="order-btn">اطلب الآن</button>
-                </div>
-            </div>
-
-            <!-- المنتج 4 -->
-            <div class="product-card">
-                <img src="cake4.jpg" alt="حلوى فاخرة 4" class="product-image">
-                <div class="product-info">
-                    <h3>صنف حلوى فاخر 4</h3>
-                    <div class="product-price">السعر حسب الطلب</div>
-                    <button class="order-btn">اطلب الآن</button>
-                </div>
-            </div>
-
-            <!-- المنتج 5 -->
-            <div class="product-card">
-                <img src="cake5.jpg" alt="حلوى فاخرة 5" class="product-image">
-                <div class="product-info">
-                    <h3>صنف حلوى فاخر 5</h3>
-                    <div class="product-price">السعر حسب الطلب</div>
-                    <button class="order-btn">اطلب الآن</button>
-                </div>
-            </div>
-
-            <!-- المنتج 6 -->
-            <div class="product-card">
-                <img src="cake6.jpg" alt="حلوى فاخرة 6" class="product-image">
-                <div class="product-info">
-                    <h3>صنف حلوى فاخر 6</h3>
-                    <div class="product-price">السعر حسب الطلب</div>
-                    <button class="order-btn">اطلب الآن</button>
-                </div>
-            </div>
-
-            <!-- المنتج 7 -->
-            <div class="product-card">
-                <img src="cake7.jpg" alt="حلوى فاخرة 7" class="product-image">
-                <div class="product-info">
-                    <h3>صنف حلوى فاخر 7</h3>
-                    <div class="product-price">السعر حسب الطلب</div>
-                    <button class="order-btn">اطلب الآن</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2026 متجر sweet للحلويات الفاخرة. جميع الحقوق محفوظة.</p>
-    </footer>
+    <!-- الصور -->
+    <img src="image1.jpg" width="200" height="150">
+    <br>
+    <img src="image2.jpg" width="200" height="150">
+    <br>
+    <img src="image3.jpg" width="200" height="150">
+    <br>
+    <img src="image4.jpg" width="200" height="150">
 
 </body>
 </html>
