@@ -3,95 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>متجر حلويات فاخرة</title>
+    <title>sweet | متجر حلويات فاخرة</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #fcf8f2; color: #4a3728; }
-        header { background-color: #7a5c43; color: white; text-align: center; padding: 25px; font-size: 26px; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-        .container { max-width: 1200px; margin: 30px auto; padding: 10px; display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; }
-        .product-card { background: white; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); width: 280px; padding: 15px; text-align: center; border: 1px solid #eedecc; transition: 0.3s; }
-        .product-card:hover { transform: translateY(-5px); }
-        .product-image { width: 100%; height: 230px; object-fit: cover; border-radius: 10px; background-color: #f5f5f5; }
-        .product-card h3 { margin: 15px 0 8px 0; color: #5a3d28; font-size: 20px; }
-        .price { font-size: 18px; color: #b57c53; font-weight: bold; margin-bottom: 15px; }
-        .btn { background-color: #b57c53; color: white; border: none; padding: 12px 20px; border-radius: 25px; cursor: pointer; font-size: 16px; width: 100%; font-weight: bold; transition: 0.3s; }
-        .btn:hover { background-color: #7a5c43; }
+        /* تنسيقات أساسية للمتجر */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fcf8f5;
+            color: #4a3728;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 30px 10px;
+            border-bottom: 2px solid #f3e1d3;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #d4a373;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.1rem;
+            color: #8c7867;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        /* شبكة عرض الصور والمنتجات */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .product-card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            border: 1px solid #f1eae4;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover; /* يضمن عدم تشوه أبعاد الصورة */
+            background-color: #f9f6f0;
+        }
+        .product-info {
+            padding: 20px;
+            text-align: center;
+            flex-grow: 1;
+        }
+        .product-info h3 {
+            margin: 0 0 10px;
+            font-size: 1.3rem;
+            color: #4a3728;
+        }
+        .product-price {
+            font-weight: bold;
+            color: #d4a373;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+        .order-btn {
+            background-color: #d4a373;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1srem;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        .order-btn:hover {
+            background-color: #bfa280;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4a3728;
+            color: #fcf8f5;
+            margin-top: 60px;
+        }
     </style>
 </head>
 <body>
 
-    <header>✨ متجر حلويات فاخرة ✨</header>
+    <header>
+        <h1>sweet</h1>
+        <p>متجر حلويات فاخرة</p>
+    </header>
 
     <div class="container">
+        <div class="products-grid">
 
-        <!-- المنتج 1 -->
-        <div class="product-card">
-            <img src="cake1.jpg" alt="المنتج 1" class="product-image">
-            <h3>كيكة الشوكولاتة بالكرز</h3>
-            <div class="price">100,000 جنيه سوداني</div>
-            <button class="btn" onclick="sendOrder('كيكة الشوكولاتة بالكرز', '100,000 جنيه سوداني')">اطلب عبر الواتساب</button>
+            <!-- المنتج 1 -->
+            <div class="product-card">
+                <img src="cake1.jpg" alt="حلوى فاخرة 1" class="product-image">
+                <div class="product-info">
+                    <h3>صنف حلوى فاخر 1</h3>
+                    <div class="product-price">السعر حسب الطلب</div>
+                    <button class="order-btn">اطلب الآن</button>
+                </div>
+            </div>
+
+            <!-- المنتج 2 -->
+            <div class="product-card">
+                <img src="cake2.jpg" alt="حلوى فاخرة 2" class="product-image">
+                <div class="product-info">
+                    <h3>صنف حلوى فاخر 2</h3>
+                    <div class="product-price">السعر حسب الطلب</div>
+                    <button class="order-btn">اطلب الآن</button>
+                </div>
+            </div>
+
+            <!-- المنتج 3 -->
+            <div class="product-card">
+                <img src="cake3.jpg" alt="حلوى فاخرة 3" class="product-image">
+                <div class="product-info">
+                    <h3>صنف حلوى فاخر 3</h3>
+                    <div class="product-price">السعر حسب الطلب</div>
+                    <button class="order-btn">اطلب الآن</button>
+                </div>
+            </div>
+
+            <!-- المنتج 4 -->
+            <div class="product-card">
+                <img src="cake4.jpg" alt="حلوى فاخرة 4" class="product-image">
+                <div class="product-info">
+                    <h3>صنف حلوى فاخر 4</h3>
+                    <div class="product-price">السعر حسب الطلب</div>
+                    <button class="order-btn">اطلب الآن</button>
+                </div>
+            </div>
+
+            <!-- المنتج 5 -->
+            <div class="product-card">
+                <img src="cake5.jpg" alt="حلوى فاخرة 5" class="product-image">
+                <div class="product-info">
+                    <h3>صنف حلوى فاخر 5</h3>
+                    <div class="product-price">السعر حسب الطلب</div>
+                    <button class="order-btn">اطلب الآن</button>
+                </div>
+            </div>
+
+            <!-- المنتج 6 -->
+            <div class="product-card">
+                <img src="cake6.jpg" alt="حلوى فاخرة 6" class="product-image">
+                <div class="product-info">
+                    <h3>صنف حلوى فاخر 6</h3>
+                    <div class="product-price">السعر حسب الطلب</div>
+                    <button class="order-btn">اطلب الآن</button>
+                </div>
+            </div>
+
+            <!-- المنتج 7 -->
+            <div class="product-card">
+                <img src="cake7.jpg" alt="حلوى فاخرة 7" class="product-image">
+                <div class="product-info">
+                    <h3>صنف حلوى فاخر 7</h3>
+                    <div class="product-price">السعر حسب الطلب</div>
+                    <button class="order-btn">اطلب الآن</button>
+                </div>
+            </div>
+
         </div>
-
-        <!-- المنتج 2 -->
-        <div class="product-card">
-            <img src="cake2.jpg" alt="المنتج 2" class="product-image">
-            <h3>صنف حلويات مميز 2</h3>
-            <div class="price">100,000 جنيه سوداني</div>
-            <button class="btn" onclick="sendOrder('صنف حلويات مميز 2', '100,000 جنيه سوداني')">اطلب عبر الواتساب</button>
-        </div>
-
-        <!-- المنتج 3 -->
-        <div class="product-card">
-            <img src="cake3.jpg" alt="المنتج 3" class="product-image">
-            <h3>صنف حلويات مميز 3</h3>
-            <div class="price">100,000 جنيه سوداني</div>
-            <button class="btn" onclick="sendOrder('صنف حلويات مميز 3', '100,000 جنيه سوداني')">اطلب عبر الواتساب</button>
-        </div>
-
-        <!-- المنتج 4 -->
-        <div class="product-card">
-            <img src="cake4.jpg" alt="المنتج 4" class="product-image">
-            <h3>صنف حلويات مميز 4</h3>
-            <div class="price">100,000 جنيه سوداني</div>
-            <button class="btn" onclick="sendOrder('صنف حلويات مميز 4', '100,000 جنيه سوداني')">اطلب عبر الواتساب</button>
-        </div>
-
-        <!-- المنتج 5 -->
-        <div class="product-card">
-            <img src="cake5.jpg" alt="المنتج 5" class="product-image">
-            <h3>صنف حلويات مميز 5</h3>
-            <div class="price">100,000 جنيه سوداني</div>
-            <button class="btn" onclick="sendOrder('صنف حلويات مميز 5', '100,000 جنيه سوداني')">اطلب عبر الواتساب</button>
-        </div>
-
-        <!-- المنتج 6 -->
-        <div class="product-card">
-            <img src="cake6.jpg" alt="المنتج 6" class="product-image">
-            <h3>صنف حلويات مميز 6</h3>
-            <div class="price">100,000 جنيه سوداني</div>
-            <button class="btn" onclick="sendOrder('صنف حلويات مميز 6', '100,000 جنيه سوداني')">اطلب عبر الواتساب</button>
-        </div>
-
-        <!-- المنتج 7 -->
-        <div class="product-card">
-            <img src="cake7.jpg" alt="المنتج 7" class="product-image">
-            <h3>صنف حلويات مميز 7</h3>
-            <div class="price">100,000 جنيه سوداني</div>
-            <button class="btn" onclick="sendOrder('صنف حلويات مميز 7', '100,000 جنيه سوداني')">اطلب عبر الواتساب</button>
-        </div>
-
     </div>
 
-    <script>
-        function sendOrder(productName, price) {
-            // ضع رقم الواتساب الخاص بك هنا بدلاً من الرقم الحالي لكي تصلك الطلبات حقيقية
-            // تأكد من كتابة الرقم بالصيغة الدولية بدون أصفار أو علامة + في البداية (مثال: "2499XXXXXXXX")
-            const phoneNumber = "249000000000"; 
-            
-            const message = `مرحباً، أود طلب: ${productName} بسعر ${price} من المتجر.`;
-            const whatsappUrl = `https://wa.me{phoneNumber}?text=${encodeURIComponent(message)}`;
-            window.open(whatsappUrl, '_blank');
-        }
-    </script>
+    <footer>
+        <p>&copy; 2026 متجر sweet للحلويات الفاخرة. جميع الحقوق محفوظة.</p>
+    </footer>
 
 </body>
 </html>
