@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -34,56 +34,57 @@
         <!-- المنتج 2 -->
         <div class="product-card">
             <img src="cake2.jpg" alt="المنتج 2" class="product-image">
-            <h3>حلويات المنتج الثاني</h3>
+            <h3>صنف حلويات مميز 2</h3>
             <div class="price">100,000 جنيه سوداني</div>
-            <button class="btn" onclick="sendOrder('حلويات المنتج الثاني', '100,000 جنيه سوداني')">اطلب عبر الواتساب</button>
+            <button class="btn" onclick="sendOrder('صنف حلويات مميز 2', '100,000 جنيه سوداني')">اطلب عبر الواتساب</button>
         </div>
 
         <!-- المنتج 3 -->
         <div class="product-card">
             <img src="cake3.jpg" alt="المنتج 3" class="product-image">
-            <h3>حلويات المنتج الثالث</h3>
+            <h3>صنف حلويات مميز 3</h3>
             <div class="price">100,000 جنيه سوداني</div>
-            <button class="btn" onclick="sendOrder('حلويات المنتج الثالث', '100,000 جنيه سوداني')">اطلب عبر الواتساب</button>
+            <button class="btn" onclick="sendOrder('صنف حلويات مميز 3', '100,000 جنيه سوداني')">اطلب عبر الواتساب</button>
         </div>
 
         <!-- المنتج 4 -->
         <div class="product-card">
             <img src="cake4.jpg" alt="المنتج 4" class="product-image">
-            <h3>حلويات المنتج الرابع</h3>
+            <h3>صنف حلويات مميز 4</h3>
             <div class="price">100,000 جنيه سوداني</div>
-            <button class="btn" onclick="sendOrder('حلويات المنتج الرابع', '100,000 جنيه سوداني')">اطلب عبر الواتساب</button>
+            <button class="btn" onclick="sendOrder('صنف حلويات مميز 4', '100,000 جنيه سوداني')">اطلب عبر الواتساب</button>
         </div>
 
         <!-- المنتج 5 -->
         <div class="product-card">
             <img src="cake5.jpg" alt="المنتج 5" class="product-image">
-            <h3>حلويات المنتج الخامس</h3>
+            <h3>صنف حلويات مميز 5</h3>
             <div class="price">100,000 جنيه سوداني</div>
-            <button class="btn" onclick="sendOrder('حلويات المنتج الخامس', '100,000 جنيه سوداني')">اطلب عبر الواتساب</button>
+            <button class="btn" onclick="sendOrder('صنف حلويات مميز 5', '100,000 جنيه سوداني')">اطلب عبر الواتساب</button>
         </div>
 
         <!-- المنتج 6 -->
         <div class="product-card">
             <img src="cake6.jpg" alt="المنتج 6" class="product-image">
-            <h3>حلويات المنتج السادس</h3>
+            <h3>صنف حلويات مميز 6</h3>
             <div class="price">100,000 جنيه سوداني</div>
-            <button class="btn" onclick="sendOrder('حلويات المنتج السادس', '100,000 جنيه سوداني')">اطلب عبر الواتساب</button>
+            <button class="btn" onclick="sendOrder('صنف حلويات مميز 6', '100,000 جنيه سوداني')">اطلب عبر الواتساب</button>
         </div>
 
         <!-- المنتج 7 -->
         <div class="product-card">
             <img src="cake7.jpg" alt="المنتج 7" class="product-image">
-            <h3>حلويات المنتج السابع</h3>
+            <h3>صنف حلويات مميز 7</h3>
             <div class="price">100,000 جنيه سوداني</div>
-            <button class="btn" onclick="sendOrder('حلويات المنتج السابع', '100,000 جنيه سوداني')">اطلب عبر الواتساب</button>
+            <button class="btn" onclick="sendOrder('صنف حلويات مميز 7', '100,000 جنيه سوداني')">اطلب عبر الواتساب</button>
         </div>
 
     </div>
 
     <script>
         function sendOrder(productName, price) {
-            // اكتب رقم الواتساب الخاص بك بدلاً من الرقم أدناه (ابدأ بـ 249 ثم رقم الهاتف مباشرة)
+            // ضع رقم الواتساب الخاص بك هنا بدلاً من الرقم الحالي لكي تصلك الطلبات حقيقية
+            // تأكد من كتابة الرقم بالصيغة الدولية بدون أصفار أو علامة + في البداية (مثال: "2499XXXXXXXX")
             const phoneNumber = "249000000000"; 
             
             const message = `مرحباً، أود طلب: ${productName} بسعر ${price} من المتجر.`;
